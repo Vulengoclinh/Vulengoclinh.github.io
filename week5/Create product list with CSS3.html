@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="uft-8">
+<title> Create product list with CSS3</title>
+<style type="text/CSS">
+.ProductDetails {display:none;}
+.Product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #aaa;
+}
+.ProductName {font-weight: bold;}
+.ProductPrice {font-style: italic;}
+.ProductPrice::before {content:"-";}
+.Product{
+    text-align: center;
+    width: 150px;
+    float: left;
+    cursor: pointer;
+}
+.Product:hover.ProductDetails {display: block;}
+</style>
+</head>
+<body>
+<div>
+    <div class="Product">
+        <img src="https://cdn.eva.vn/upload/3-2022/images/2022-08-12/image24-1660292012-373-width2048height1696.jpg"/>
+        <div class="PoductDetails">
+            <span class="ProductName">Rose</span>
+            <span class="ProductPrice">1.5$</span>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="Product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS28IJ2aHNZ7IL14FRcgoqhRWG3idxTOshFZg&usqp=CAU"/>
+        <div class="PoductDetails">
+            <span class="ProductName">Tulip</span>
+            <span class="ProductPrice">2.0$</span>
+        </div>
+    </div>
+    <div class="Product">
+        <img src="https://images.pexels.com/photos/122611/pexels-photo-122611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        <div class="PoductDetails">
+            <span class="ProductName">Daisy</span>
+            <span class="ProductPrice">1.0$</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
